@@ -158,12 +158,13 @@ a:hover {
   font-size: 2.8rem;
   position: relative;
 }
-.hero_greeting h1::after {
+/* .hero_greeting h1::after {
   content: "";
   position: absolute;
   width: 100%;
+  top: 100%;
   background-image: url("./img/symbol.png");
-}
+} */
 .hero_greeting .container {
   display: flex;
   flex-direction: column;
@@ -172,7 +173,10 @@ a:hover {
 }
 .hero_greeting-head {
   display: flex;
-  align-items: flex-end;
+  align-items: start;
+}
+.hero_greeting-head .symbol {
+  transform: translateX(-2rem);
 }
 
 /* ========about */

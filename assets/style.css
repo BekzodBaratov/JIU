@@ -84,9 +84,10 @@ a:hover {
 .header {
   padding: 1rem 0;
   backdrop-filter: blur(10px);
-  color: var(--color-white);
+  color: var(--color-gray);
 
   position: fixed;
+  z-index: 10000;
   top: 0;
   left: 0;
   right: 0;
@@ -220,6 +221,7 @@ a:hover {
   background-size: cover;
   min-height: 80vh;
   color: var(--color-white);
+  margin-bottom: 3rem;
 
   position: relative;
 }
@@ -235,4 +237,39 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   width: 70%;
+}
+
+/* =======university majors */
+.majors {
+  min-height: 100vh;
+  position: relative;
+  color: var(--color-white);
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.swiper_slide-item {
+  background-image: url("./img/background\ \(1\).png");
+  min-height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 3rem;
+
+  display: flex;
+  align-items: center;
+}
+.major_container {
+  width: 24rem;
+
+  padding-left: 3rem;
 }
